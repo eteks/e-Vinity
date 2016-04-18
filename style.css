@@ -1585,10 +1585,10 @@ Contact Page CSS
     margin-bottom: 25px;
 }
 .contact_info .col-sm-4:nth-child(2) ul {
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .contact_info .col-sm-4:nth-child(3) ul {
-    padding-top: 15px;
+    padding-top: 0px;
 }
 .contact_info ul li{
     color: #666666;
@@ -1616,7 +1616,7 @@ Contact Page CSS
   margin-left: -20px;
 }
 .send_us_email_area {
-    background: url("img/bg_contact_page.png") no-repeat scroll left center / cover  rgba(0, 0, 0, 0);
+    background: url("img/bg_contact_page.jpg") no-repeat scroll left center / cover  rgba(0, 0, 0, 0);
     overflow: hidden;
 }
 .send_email{
@@ -2505,7 +2505,7 @@ Only For IE CSS
     padding: 10px;
 }
 .sing_align {
-    margin-top: 50px;
+    margin-top: 0px;
     padding: 20px;
 }
 .writer{
