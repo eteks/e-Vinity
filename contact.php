@@ -173,9 +173,20 @@ $email="";
         <div id="preloader">
             <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
         </div>
-        
+        <div class="top_area">
+        	<div class="mbl_num">
+        		<span>8940400949, 8940400941, 0413 - 3291001</span>
+        	</div><!--mbl_num-->
+        	<div class="social_icons">
+        		<ul class="footer_social">
+                    <li><a href="https://www.facebook.com/E-vinity-1751214965113308/?skip_nax_wizard=true" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/VinityE" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/e-vinity-big-data-093b43117" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+        	</div><!--social_icons-->
+        </div><!--top_area-->
         <header class="header_area">
-            <div class="container">
+            <div class="">
                 <div class="header_content">
                     <div class="row">
                         <div class="col-md-3 col-sm-2">
@@ -192,7 +203,7 @@ $email="";
                                 </div>                             
                             </div>
                         </div>                                    
-                        <div class="col-md-9 col-sm-10 nav_area">
+                        <div class="col-md-8 col-sm-10 nav_area">
                             <nav class="main_menu">
                                 <div class="navbar-collapse collapse"> 
                                     <ul class="nav navbar-nav navbar-right">
@@ -245,34 +256,9 @@ $email="";
             </div>
         </section>
         
-        <section class="map_location_area">
-            <div class="google_map">
-                <div id="map_area"></div>
-                <div class="map_caption">
-                    <h2>How To Reach Us</h2>
-                    <div class="row contact_info">
-                        <div class="col-sm-4">
-                            <ul>
-                                <li><i class="pe-7s-map-marker"></i>10, 2nd Floor,  Maria Tower, Vellavari Street, Muthialpet, Puducherry - 605003.</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul>
-                                <li><i class="pe-7s-call"></i><a href="tel:+91 - 413 - 2235600">+91 - 413 - 2235600</a></li>
-                                <!-- <li><i class="pe-7s-print"></i><a href="tel:+123-456-789-001">+123 456 789 001</a></li> -->
-                            </ul>
-                        </div>
-                        <div class="col-sm-4">
-                            <ul>
-                                <li><i class="pe-7s-mail"></i><a href="mailto:Info@e-vinity.com">Info@e-vinity.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- <a href="#"><i class="fa fa-chevron-right"></i>Get The Direction</a> -->
-                </div>
-            </div>
-        </section>
-        
+        <div class="download-brou">
+        	<a href="broucher.pdf" class="broucher_align" target="_blank">Download Broucher </a>
+		</div>
         <section class="send_us_email_area">
             <div class="container">
                 <div class="row">
@@ -311,6 +297,35 @@ $email="";
             </div>
         </section>
         
+        <section class="map_location_area">
+            <div class="google_map">
+                <div class="map_caption">
+                    <h2>How To Reach Us</h2>
+                    <div class="row contact_info">
+                        <div class="col-sm-4">
+                            <ul>
+                                <li><i class="pe-7s-map-marker"></i>10, 2nd Floor,  Maria Tower, Vellavari Street, Muthialpet, Puducherry - 605003.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul>
+                                <li><i class="pe-7s-call"></i><a href="tel:+91 - 413 - 2235600">+91 - 413 - 2235600</a></li>
+                                <!-- <li><i class="pe-7s-print"></i><a href="tel:+123-456-789-001">+123 456 789 001</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul>
+                                <li><i class="pe-7s-mail"></i><a href="mailto:Info@e-vinity.com">Info@e-vinity.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <a href="#"><i class="fa fa-chevron-right"></i>Get The Direction</a> -->
+                </div>
+            </div>
+        </section>
+        
+        
+        <div id="map_area"></div>
         <footer class="footer_area">
             <div class="footer_top">
                 <div class="container">

@@ -167,5 +167,17 @@ $("#contact_form").validate({
 		}).mouseup(function () {
 		  $(this).data('drag', false);
 	});
-    
+	
+    $(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 354) {
+				$('.header_content').addClass('header_active');
+				$('.top_area').css({'display':'none'});
+			}
+			else{
+				$('.header_content').removeClass('header_active');
+				$('.top_area').css({'display':'block'});
+			}
+		});
+	});
 }(jQuery));	

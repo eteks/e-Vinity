@@ -72,10 +72,22 @@
   height: 0;
 }
 .owl-carousel .owl-stage-outer {
-  position: relative;
+  margin: 0 0 0 80px;
   overflow: hidden;
+  position: relative;
+  width: 50%;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
+}
+@media(min-width:768px) {
+	.owl-carousel .owl-stage-outer {
+	  margin: 0 0 0 30px;
+	  overflow: hidden;
+	  position: relative;
+	  width: 95%;
+	  /* fix for flashing background */
+	  -webkit-transform: translate3d(0px, 0px, 0px);
+	}
 }
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel .owl-controls .owl-nav .owl-next,

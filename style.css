@@ -188,6 +188,7 @@ a.rm_btn{
     font-size: 32px;
     font-weight: 700;
     margin: 0;
+    text-align: center;
 }
 .section_heading p{
     color: #6a9b16;
@@ -228,7 +229,7 @@ Preloader CSS
 Breadcrumb CSS
 -----------------------------------------------------------*/
 .breadcrumb_area {
-    margin-top: -123px;
+    margin-top: 0px;
     overflow: hidden;
 }
 .breadcrumb_top{
@@ -295,25 +296,31 @@ Header CSS
 .header_area{
     margin-top: 47px;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 .header_content{
     font-family: 'Libre Baskerville', serif;
-    position: relative;
+    position: fixed;
+	width: 100%;
     z-index: 9;
-    background: #fff;
+    background: rgba(227, 227, 227, 0.5) none repeat scroll 0 0;
     /*height: 275px;*/
 }
 @media (min-width: 768px) {
 	.header_content{
 	    font-family: 'Libre Baskerville', serif;
-	    position: relative;
+	    position: fixed;
+    	width: 100%;
 	    z-index: 9;
 	    background: rgba(227, 227, 227, 0.5) none repeat scroll 0 0;
 	    height: 75px;
+	    z-index: 10;
 	}
 }
 .logo {
-  padding-left: 30px;
+  padding-left: 100px;
 }
 .logo a{
     font-size: 18px;
@@ -399,7 +406,7 @@ Key To Success CSS
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    margin-top: -123px;
+    margin-top: 0px;
 }
 .key_to_success{
     overflow: hidden;
@@ -467,16 +474,30 @@ Our Courses CSS
 .single_our_course{
     background: #f8f8f8;
     border: 1px solid #ececec;
-    margin-top: 30px;
+    margin-top: 0px;
+}
+@media(min-width:768px){
+	.single_our_course{
+	    background: #f8f8f8;
+	    border: 1px solid #ececec;
+	    margin-top: 30px;
+	}
 }
 .sing_course_thumb > img {
   position: relative;
   z-index: 1;
 }
 .sing_course_txt{
-    margin: 20px 29px 30px;
+    margin: 20px 8px 30px;
     position: relative;
     z-index: 0;
+}
+@media(min-width:768px){
+	.sing_course_txt{
+	    margin: 20px 29px 30px;
+	    position: relative;
+	    z-index: 0;
+	}
 }
 .sing_course_txt .course_icon {
   position: absolute;
@@ -513,19 +534,30 @@ Our Courses CSS
     font-weight: bold;
 }
 .about_key_points{
-    list-style: outside none disc;
-    padding-left: 60px;
+    list-style: disc;
+    padding-left: 40px;
     font-size: 15px;
     line-height: 34px;
     color: #7e7e7e;
     font-family: Arial;
+    text-align: left;
+}
+@media(min-width:768px){
+	.about_key_points{
+	    list-style: disc;
+	    padding-left: 60px;
+	    font-size: 15px;
+	    line-height: 34px;
+	    color: #7e7e7e;
+	    font-family: Arial;
+	}
 }
 .course_points li{
     color: #565656;
     font-family: Arial;
     font-size: 14px;
     line-height: 25px;
-    list-style: outside none disc;
+    list-style: disc;
 }
 .course_points {
     padding: 0 0 0 40px;
@@ -534,9 +566,19 @@ Our Courses CSS
     font-family: Arial;
     font-size: 14px;
     line-height: 25px;
-    list-style: outside none disc;
-    padding-left: 100px;
+    list-style: disc;
+    padding-left: 55px;
     color: #565656;
+}
+@media(min-width:768px){
+	.analytics_points {
+	    font-family: Arial;
+	    font-size: 14px;
+	    line-height: 25px;
+	    list-style: disc;
+	    padding-left: 100px;
+	    color: #565656;
+	}
 }
 .analytics_highlights {
     font-family: Arial;
@@ -545,7 +587,7 @@ Our Courses CSS
 }
 .inside_points {
     line-height: 25px;
-    list-style: outside none disc;
+    list-style: disc;
     padding-left: 52px;
     font-family: Arial;
     font-size: 14px;
@@ -555,7 +597,7 @@ Our Courses CSS
     font-family: Arial;
     font-size: 14px;
     line-height: 25px;
-    list-style: outside none disc;
+    list-style: disc;
     padding-left: 65px;
     color: #565656;
 }
@@ -569,7 +611,7 @@ Our Courses CSS
     font-family: Arial;
     font-size: 14px;
     line-height: 25px;
-    list-style: outside none disc;
+    list-style: disc;
     padding-left: 65px;
     color: #565656;  
 }
@@ -578,8 +620,18 @@ Our Courses CSS
     font-family: Arial;
     font-size: 15px;
     line-height: 25px;
-    padding: 20px 80px 0;
+    padding: 20px 0px 0;
     text-align: justify;
+}
+@media(min-width:768px){
+	.gurantee_points {
+	    color: #565656;
+	    font-family: Arial;
+	    font-size: 15px;
+	    line-height: 25px;
+	    padding: 20px 80px 0;
+	    text-align: justify;
+	}
 }
 .last_point {
      color: #000;
@@ -596,7 +648,7 @@ Our Courses CSS
     font-size: 14px;
     left: 68px;
     line-height: 25px;
-    list-style: outside none disc;
+    list-style: disc;
     position: relative;
 }
 .advan_analytics {
@@ -698,7 +750,7 @@ Why Choose Us CSS
     font-family: Arial;
 }
 .why_choose_us_txt ul{
-    list-style: inside none disc !important;
+    list-style: disc !important;
     padding: 0 0 0 23px;
     color: #565656;
     font-size: 15px;
@@ -1148,7 +1200,7 @@ Our Degrees CSS
     position: relative;
 }
 .od_bg1{
-    background: #f8f8f8;
+    background: transparent;
 }
 .od_bg2{
     background: transparent;
@@ -1169,8 +1221,7 @@ Our Degrees CSS
     background: transparent;
 }
 .our_degrees_txt {
-  margin-right: 70px;
-  margin-top: 0px;
+   margin: 0 70px 0 15px;
 }
 .our_degrees_txt h2{
     font-size: 32px;
@@ -1572,9 +1623,9 @@ Contact Page CSS
     position: right;
     top: calc(50% - 249px/2);
     left:calc(50% - 695px/2);
-    background: #fff;
+    background: transparent;
     width: 695px;
-    z-index: 9;
+    /*z-index: 9;*/
     position:relative;
 }
 .map_caption h2{
@@ -1945,7 +1996,16 @@ Right Sidebar CSS
     text-transform: uppercase;
     line-height: 18px;
     margin-bottom: 10px;
-    width:130%;
+    width:66%;
+}
+@media(min-width:768px){
+	.lat_news_right_con h3{
+	    font-size: 13px;
+	    text-transform: uppercase;
+	    line-height: 18px;
+	    margin-bottom: 10px;
+	    width:130%;
+	}
 }
 .lat_news_right_con h3 a{
     color: #222222;
@@ -2270,7 +2330,7 @@ Only For IE CSS
 }
 
 .privacy_list {
-    list-style: inside none disc !important;
+    list-style: disc !important;
     padding: 0 0 0 23px;
     color: #7e7e7e;
     font-size: 15px;
@@ -2297,7 +2357,12 @@ Only For IE CSS
 	padding: 0 0 0 8px;
 }
 .courses_img img{
-	margin:75px 30px 0 0;
+	margin:35px 30px 0 0;
+}
+@media(min-width:768px){
+	.courses_img img{
+		margin:75px 30px 0 0;
+	}
 }
 .div-roles p {
     display: none;
@@ -2308,17 +2373,32 @@ Only For IE CSS
 .div-roles{
 	border: 1px solid #afcb39;
     /*box-shadow: -5px 5px 0 #f0f0f0;*/
-    height: 95px;
+    height: auto;
     padding: 25px 0;
     text-align: center;
+}
+@media(min-width:768px){
+	.div-roles{
+		border: 1px solid #afcb39;
+	    /*box-shadow: -5px 5px 0 #f0f0f0;*/
+	    height: 95px;
+	    padding: 25px 0;
+	    text-align: center;
+	}
 }
 .frequent_questions h2 {
     font-family:"Arial";    font-size:30px; font-weight:bold;
     color:#000 !important;
 }
 .frequent_questions ul li{  
-    width:570px;    
+    width:295px;    
     padding:0px 0px 0px 0px;
+}
+@media(min-width:768px){
+	.frequent_questions ul li{  
+	    width:570px;    
+	    padding:0px 0px 0px 0px;
+	}
 }
 .frequent_questions ul { margin:0px ; }
 .frequent_questions ul li h3,.frequent_questions ul li.with_bg h3{
@@ -2588,23 +2668,84 @@ Only For IE CSS
 }
 .broucher_align {
     color: #fff !important;
+    font-family: Arial;
+    font-size: 16px;
+    left: 4px;
     opacity: 1;
-    padding: 12px;
     position: relative;
     text-align: center;
     top: 12px;
-    font-family: Arial;
 }
 .download-brou {
-    background: #000 none repeat scroll 0 0;
+    background: #eb1c24 none repeat scroll 0 0;
     border-radius: 5px;
+    bottom: 0;
     float: right;
     height: 45px;
-    left: 50px;
-    opacity: 0.62;
-    position: relative;
-    top: 85px;
+    opacity: 0.72;
+    position: absolute;
+    right: -52px;
     transform: rotate(270deg);
     width: 150px;
+    z-index: 9;
 }
-
+.section_heading_job span {
+    font-size: 15px;
+}
+.dataware-img{
+	margin: 0px 30px 0 0;
+}
+@media(min-width:768px){
+	.dataware-img{
+		margin: 140px 30px 0 0;
+	}
+}
+.bigdata-img{
+	float: none;
+}
+@media(min-width:768px){
+	.bigdata-img{
+		float: right;
+	}
+}
+.top_area {
+    background: rgba(227, 227, 227, 0.5) none repeat scroll 0 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.top_area > .mbl_num {
+    float: left;
+    height: 48px;
+    width: 84%;
+}
+.mbl_num > span {
+    background: url("img/icon_footer_contact_2.png") no-repeat;
+    color: #fff;
+    position:absolute;
+    margin: 15px 0 0 90px;
+    padding: 0 0 0 25px;
+}
+.social_icons {
+    display: inline;
+    position: absolute;
+    top: 0;
+}
+.social_icons li{
+	display: inline-block;
+    margin-right: 5px;
+}
+.social_icons li a{
+	border: 1px solid;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    width: 25px;
+}
+.header_active{
+	background: #6a9b16;
+	top: 0;
+}
