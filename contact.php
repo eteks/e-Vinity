@@ -203,17 +203,21 @@ $email="";
                                 </div>                             
                             </div>
                         </div>                                    
-                        <div class="col-md-8 col-sm-10 nav_area">
+                        <div class="col-md-9 col-sm-10 nav_area">
                             <nav class="main_menu">
                                 <div class="navbar-collapse collapse"> 
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="courses.html">Courses</a></li>
+                                        <li><a href="courses.html">Datawarehouse</a></li>
+                                        <li><a href="courses.html">Bigdata</a></li>
+                                        <li><a href="courses.html">Advanced Analytics</a></li>
                                         <li><a href="about.html">About</a></li>
                                         <!-- <li><a href="events.html">Events</a></li> -->
                                         <li><a href="news.html">News</a></li>
                                         <!-- <li><a href="alumni.html">Alumni</a></li> -->
                                         <li class="current_page_item"><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="broucher.pdf" target="_blank">Download Broucher</a></li>
                                     </ul>                                                     
                                 </div>
                             </nav>
@@ -256,9 +260,9 @@ $email="";
             </div>
         </section>
         
-        <div class="download-brou">
+        <!-- <div class="download-brou">
         	<a href="broucher.pdf" class="broucher_align" target="_blank">Download Broucher </a>
-		</div>
+		</div> -->
         <section class="send_us_email_area">
             <div class="container">
                 <div class="row">

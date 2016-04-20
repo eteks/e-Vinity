@@ -199,9 +199,10 @@ a.rm_btn{
 	display:none;
 }
 .carousel {
+    bottom: 0;
+    left: 0;
     position: absolute;
-    bottom: 0px;
-    width:90%;
+    width: 100%;
 }
 
 /* --------------------------------------------------------
@@ -305,7 +306,7 @@ Header CSS
     position: fixed;
 	width: 100%;
     z-index: 9;
-    background: rgba(227, 227, 227, 0.5) none repeat scroll 0 0;
+    background: rgba(110, 179, 46, 0.88) none repeat scroll 0 0;
     /*height: 275px;*/
 }
 @media (min-width: 768px) {
@@ -314,7 +315,7 @@ Header CSS
 	    position: fixed;
     	width: 100%;
 	    z-index: 9;
-	    background: rgba(227, 227, 227, 0.5) none repeat scroll 0 0;
+	    background: rgba(110, 179, 46, 0.88) none repeat scroll 0 0;
 	    height: 75px;
 	    z-index: 10;
 	}
@@ -341,9 +342,9 @@ Header CSS
 }
 ul.nav.navbar-nav li > a{
     position: relative;
-    padding: 0 20px;
+    padding: 0 16px;
     line-height: 73px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 700;
 }
 ul.nav.navbar-nav > li > a:after{
@@ -402,7 +403,7 @@ ul.nav.navbar-nav li > a:hover:after, ul.nav.navbar-nav li.current_page_item a:a
 Key To Success CSS
 -----------------------------------------------------------*/
 .key_to_success_area{
-    background: url(img/bg_header_bottom.jpg);
+    /*background: url(img/bg_header_bottom.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -2709,10 +2710,11 @@ Only For IE CSS
 	}
 }
 .top_area {
-    background: rgba(227, 227, 227, 0.5) none repeat scroll 0 0;
+    background: rgba(110, 179, 46, 0.88) none repeat scroll 0 0;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 999;
 }
 .top_area > .mbl_num {
     float: left;
@@ -2748,4 +2750,10 @@ Only For IE CSS
 .header_active{
 	background: #6a9b16;
 	top: 0;
+}
+.carousel-indicators li {
+	border: 1px solid #000 !important;
+}
+.carousel-indicators .active {
+    background-color: #6eb32e !important;
 }
