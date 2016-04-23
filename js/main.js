@@ -105,20 +105,35 @@ $("#contact_form").validate({
 						required: true,
 						email: true
 					},
+                    phone_no: {
+                        required: true,
+                        minlength:10
+                    }
 				},
 				messages: {
 					Name: {
-						required: "Please enter a yourname",
+						required: "Please enter yourname",
 						minlength: "Your name must consist of at least 2 characters"
 					},
-					Email: "Please enter a valid email address",					
+					Email: "Please enter valid email address",
+                    phone_no:{
+                        required: "Please enter  mobile number",
+                        maxlength: "Please enter mobile number with 10 digits"
+                    }					
 
 				}
 			});
+    
+    //clear characters 
+    $(document).on('keypress','#mobile',function(e){
+         if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                   return false;
+        }
+    });
 
 	$('#contact_form').submit(function(event) {
-			event.preventDefault();
-			var content = $(this).serializeArray(); 
+			event.preventDefault();           
+			var content = $(this).serializeArray();
 			var formname = $(this).attr('id');
 			var res = true;
 			$("input[type='text'],textarea",this).each(function() {
@@ -126,6 +141,7 @@ $("#contact_form").validate({
       				res = false; 
      				}
     			});
+       
 			content.push({"name":"formname","value":formname});
 			if(res){
 				$.ajax({
@@ -135,8 +151,9 @@ $("#contact_form").validate({
 					success: function(data) {
 						alert(data);
 					},
-				});
+				});               
 			}
+            $('#contact_form input[type="text"],textarea').val('');
 		});
 
 		fadeContent();
