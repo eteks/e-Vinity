@@ -177,9 +177,9 @@ $email="";
         	<div class="mbl_num">
         		<!-- <span>8940400949, 8940400941, 0413 - 3291001</span> -->
         		<ul>
-        			<li><img src="img/icon_footer_contact_2.png" /><a href="tel:8940400949">8940400949,</a></li>
-        			<li><a href="tel:8940400941">8940400941</a></li>
-        			<li><img src="img/phone_icon.png" /><a href="tel:0413 - 3291001">0413 - 3291001</a></li>
+        			<li><img src="img/icon_footer_contact_2.png" /><a href="tel:+91-8940400949">+91 - 8940400949,</a></li>
+        			<li><a href="tel:+91-8940400941">+91 - 8940400941</a></li>
+        			<li><img src="img/phone_icon.png" /><a href="tel:+91 - 413 - 3291001">+91 - 413 - 3291001</a></li>
         		</ul>
         	</div><!--mbl_num-->
         	<div class="social_icons">
@@ -222,7 +222,7 @@ $email="";
                                         <li><a href="news.html">News</a></li>
                                         <!-- <li><a href="alumni.html">Alumni</a></li> -->
                                         <li class="current_page_item"><a href="contact.html">Contact Us</a></li>
-                                        <li><a href="broucher.pdf" target="_blank">View Broucher</a></li>
+                                        <li><a href="broucher.pdf" target="_blank">View Brochure</a></li>
                                     </ul>                                                     
                                 </div>
                             </nav>
@@ -274,7 +274,7 @@ $email="";
                     <div class="col-sm-offset-6 col-sm-6 fix_p">
                         <div class="send_email">
                             <div class="section-padding">
-                                <h2>Send Us An Email</h2>
+                                <h2>For More Information</h2>
                                 <div class="email_form">
                                     <form  method="post"name="myForm" onsubmit="return(validate());"  action="contact.php" >
                                         <div class="col-md-6 fix_p_r">
@@ -316,13 +316,13 @@ $email="";
                                 <li><i class="pe-7s-map-marker"></i>10, 2nd Floor,  Maria Tower, Vellavari Street, Muthialpet, Puducherry - 605003.</li>
                             </ul>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <ul>
                                 <li><i class="pe-7s-call"></i><a href="tel:+91 - 413 - 2235600">+91 - 413 - 2235600</a></li>
                                 <!-- <li><i class="pe-7s-print"></i><a href="tel:+123-456-789-001">+123 456 789 001</a></li> -->
                             </ul>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <ul>
                                 <li><i class="pe-7s-mail"></i><a href="mailto:info@e-vinity.com">info@e-vinity.com</a></li>
                             </ul>

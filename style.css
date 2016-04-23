@@ -314,7 +314,8 @@ Header CSS
     position: fixed;
 	width: 100%;
     z-index: 9;
-    background: rgba(110, 179, 46, 0.88) none repeat scroll 0 0;
+    background: rgba(83, 132, 39, 0.9) none repeat scroll 0 0;
+    border-top: 0.2em solid #d9fe3f;
     /*height: 275px;*/
 }
 @media (min-width: 768px) {
@@ -323,9 +324,10 @@ Header CSS
 	    position: fixed;
     	width: 100%;
 	    z-index: 9;
-	    background: rgba(110, 179, 46, 0.88) none repeat scroll 0 0;
+	    background: rgba(83, 132, 39, 0.9) none repeat scroll 0 0;
 	    height: 75px;
 	    z-index: 10;
+	    border-top: 0.2em solid #d9fe3f;
 	}
 }
 .logo {
@@ -773,7 +775,7 @@ Why Choose Us CSS
     line-height: 29px;
     font-family: Arial;
     font-weight: 200;
-    text-align : justify;
+    text-align : right;
 }
 
 /* --------------------------------------------------------
@@ -1633,7 +1635,7 @@ Contact Page CSS
     top: calc(50% - 249px/2);
     left:calc(50% - 695px/2);
     background: transparent;
-    width: 695px;
+    width: 790px;
     /*z-index: 9;*/
     position:relative;
 }
@@ -1651,14 +1653,14 @@ Contact Page CSS
     padding-top: 0px;
 }
 .contact_info ul li{
-    color: #666666;
+    color: #000;
     font-size: 12px;
     text-transform: uppercase;
     line-height: 24px;
     font-family: Arial;
 }
 .contact_info ul li a{
-    color: #666666;
+    color: #000;
 }
 .map_caption a{
     color: #6a9b16;
@@ -2718,7 +2720,7 @@ Only For IE CSS
 	}
 }
 .top_area {
-    background: rgba(110, 179, 46, 0.88) none repeat scroll 0 0;
+    background: rgba(83, 132, 39, 0.9) none repeat scroll 0 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -2757,8 +2759,8 @@ Only For IE CSS
 	.mbl_num a {
 	    color: #fff;
 	    font-family: Arial;
-	    padding: 0 2px 0 8px;
-        font-size: 12px;
+	    padding: 0 2px 0 5px;
+        font-size: 14px;
 	}
 }
 .mbl_num img {
@@ -2791,7 +2793,8 @@ Only For IE CSS
     width: 25px;
 }
 .header_active{
-	background: #6a9b16;
+	background: #538427;
+	border-top: medium none;
 	top: 0;
 }
 .carousel-indicators li {
@@ -2802,4 +2805,8 @@ Only For IE CSS
 }
 .footer_contact a {
     color: #efefef;
+}
+.contact_info {
+    position: relative;
+    left: 70px;
 }
