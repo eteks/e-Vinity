@@ -516,13 +516,13 @@ Our Courses CSS
   bottom: 115px;
   z-index: -1;
 }
-.sing_course_txt h2{
+.sing_course_txt h2,.about_course_txt h2,.objective_course_txt h2,.target_course_txt h2{
     font-size: 18px;
     font-family: 'LatoHeavy', sans-serif;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.sing_course_txt p{
+.sing_course_txt p ,.about_course_txt p,.target_course_txt p{
     color: #565656;
     font-family: Arial;
     font-size: 15px;
@@ -2809,4 +2809,18 @@ Only For IE CSS
 .contact_info {
     position: relative;
     left: 70px;
+}
+
+/* style added by muthu */
+.about_vision{
+	text-align : left!important;
+   
+}	
+.about_course_txt{
+   text-align:justify;
+}
+@media(min-width:768px){
+	.about_course_txt{
+		text-align:justify;
+	}
 }
