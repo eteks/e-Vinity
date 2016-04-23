@@ -6,60 +6,6 @@
 <!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
     <head>
-<script type="text/javascript">
-
-      function validateEmail()
-      {
-         var emailID = document.myForm.email.value;
-         atpos = emailID.indexOf("@");
-         dotpos = emailID.lastIndexOf(".");
-         
-         if (atpos < 1 || ( dotpos - atpos < 2 )) 
-         {
-            alert("Please enter correct email ID");
-            document.myForm.email.focus() ;
-            return false;
-         }
-         return( true );
-      }
-
-      // Form validation code will come here.
-      function validate()
-      {
-         if( document.myForm.name.value == "" )
-         {
-            alert( "Please provide your name!" );
-            document.myForm.name.focus() ;
-            return false;
-         }
-		  
-		  
-         if( document.myForm.email.value == "" )
-         {
-            alert( "Please provide your Email!" );
-            document.myForm.email.focus() ;
-            return false;
-         }
-
-		  if( document.myForm.email.value != "" )
-         {
-         var emailID = document.myForm.email.value;
-         atpos = emailID.indexOf("@");
-         dotpos = emailID.lastIndexOf(".");
-         
-         if (atpos < 1 || ( dotpos - atpos < 2 )) 
-         {
-            alert("Please enter correct email ID");
-            document.myForm.email.focus() ;
-            return false;
-         } 
-         return( true );
-         }	
-		 
-
-}
-  
-</script>		
 	<?php
 /*  
 echo $comment_to_user;
@@ -276,18 +222,17 @@ $email="";
                             <div class="section-padding">
                                 <h2>Send Us An Email</h2>
                                 <div class="email_form">
-                                    <form  method="post"name="myForm" onsubmit="return(validate());"  action="contact.php" >
-                                        <div class="col-md-6 fix_p_r">
+                                    <form  method="post"name="myForm" action="contact.php" id="contact_form" >                                        <div class="col-md-6 fix_p_r">
                                             <label>Your Name <span>*</span></label>
-                                            <input type="text" name="name">
+                                            <input type="text" name="Name" autocomplete="off">
                                         </div>
                                         <div class="col-md-6 fix_p_r">
                                             <label>Your E-Mail <span>*</span></label>
-                                            <input type="text" name="email">
+                                            <input type="text" name="Email" autocomplete="off">
                                         </div>
                                         <div class="col-md-12 fix_p_r">
-                                            <label>Phone Number</label>
-                                            <input type="text"  name="phone_no">
+                                            <label>Phone Number <span>*</span></label>
+                                            <input type="text"  name="phone_no" maxlength="10" id="mobile" autocomplete="off">
                                         </div>
                                         <!-- <div class="col-md-6 fix_p_r">
                                             <label>Subject</label>
